@@ -2,7 +2,16 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-align: center;
 }
 
 h1 {
@@ -33,4 +42,24 @@ h2 {
 
 li {
     padding: 10px;
+}
+
+.home-button {
+    background-color: rgb(241, 195, 195, 0.5);
+    border: none;
+    height: 30px;
+    width: fit-content;
+    color: black;
+    margin: auto;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    background-color: #5f0707;
+    color: white;
 }
