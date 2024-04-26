@@ -1,11 +1,13 @@
+/* stylesheet */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
 }
 
 h1 {
     font-size: 44px;
-    color: #5f0707;
+    /* color: #5f0707; */
     font-weight: 900;
 }
 
@@ -13,4 +15,22 @@ h2 {
     font-size: 30px;
     color:#5f0707;
     font-weight: 700;
+}
+
+.recipe-list {
+    background-color: rgb(241, 195, 195, 0.5);
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+    width: 80%;
+    list-style-position: inside
+}
+
+.recipe-list a {
+    text-decoration: none;
+    color:black;
+}
+
+li {
+    padding: 10px;
 }
