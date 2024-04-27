@@ -1,37 +1,57 @@
 /* stylesheet */
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* General */
+
+* {
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    font-size: 25px;
+    background-color: rgb(241, 195, 195, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    line-height: normal;
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 50px;
     /* color: #5f0707; */
     font-weight: 900;
 }
 
+.header-link {
+    text-decoration: none;
+    color:black;
+}
+
+.header-link:hover {
+    color: white;
+}
+
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     color:#5f0707;
     font-weight: 700;
 }
 
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Recipe List */
+
 .recipe-list {
-    background-color: rgb(241, 195, 195, 0.5);
-    padding: 10px;
+    background-color: white;
+    padding: 20px 10px;
     text-align: left;
-    margin: auto;
-    width: 80%;
+    margin: 0 auto;
+    width: 50%;
     list-style-position: inside
 }
 
@@ -40,26 +60,65 @@ h2 {
     color:black;
 }
 
-li {
-    padding: 10px;
+.recipe-list a:hover {
+    color:#5f0707;
 }
 
+/* Home Button */
+
 .home-button {
-    background-color: rgb(241, 195, 195, 0.5);
-    border: none;
-    height: 30px;
+    background-color: white;
+    border: rgb(241, 195, 195, 0.5) solid  5px;
+    height: 3em;
     width: fit-content;
     color: black;
-    margin: auto;
-    padding: 5px 10px;
+    margin: 30px auto;
+    padding: 10px 20px;
     display: block;
-    border-radius: 15px;
-    font-size: 20px;
-    font-weight: 700;
+    border-radius: 40px;
+    font-weight: 100;
     text-decoration: none;
+}
+
+.home-button p {
+    margin: 0 auto;
 }
 
 .home-button:hover {
     background-color: #5f0707;
     color: white;
+    border: #5f0707 solid  5px;
+}
+
+/* Recipe Layout */
+
+.recipe-container {
+    background-color: white;
+    padding: 30px;
+    margin: 0 auto 50px;
+    width: 75%;
+}
+
+.recipe-img {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.ingredients-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 0 0 auto 0;
+}
+
+.ingredients-h {
+    text-align: left;
+    margin-top: 0;
+}
+
+.ingredient-list {
+    text-align: left;
+    margin-bottom: 0;
 }
